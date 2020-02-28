@@ -1,0 +1,10 @@
+<?php
+$num1 = 4;
+$num2 = 5;
+$result = $num1 + $num2;
+?>
+<html>
+<body>
+<?php echo $result; ?>
+</body>
+</html>
