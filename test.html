@@ -1,17 +1,171 @@
-<!DOCTYPE html>
-<html>
-<body>
 
-<h2>Redirect to a Webpage</h2>
-<p>The replace() method replaces the current document with a new one:</p>
+<!doctype html>
 
-<button onclick="myFunction()">Replace document</button>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>stonks.gg | BUY IT</title>
+  <meta name="description" content="Hypixel Bazaar Site">
+  <meta name="author" content="Minikloon">
+  <link rel="icon" href="/res/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/res/bootstrap.min.css">
+  <link rel="stylesheet" href="/res/style.css">
+  <link rel="stylesheet" href="/res/blocks_items.css">
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.4/dist/latest/bootstrap-autocomplete.min.js"></script>
+</head>
+
 
 <script>
-function myFunction() {
-  location.replace("google.com")
-}
+    document.addEventListener('DOMContentLoaded', function () {
+        $('.globalSearch').autoComplete({
+            minLength: 1,
+            resolverSettings: {
+                url: "/autocomplete",
+                requestThrottling: 50
+            }
+        });
+    });
 </script>
 
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">stonks.gg</a>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://hypixel.net" title="Go to Hypixel website [CLICK]">The #1 SkyBlock Big Brain Website</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="https://minikloon.com/blog" title="Go to my blog [CLICK]">minikloon.com</a>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right ml-3">
+        <li class="nav-item">
+          <form class="form-inline" action="/search">
+                <div class="input-group">
+                    <input class="form-control globalSearch" placeholder="Product or item name" name="input" type="text" autocomplete="off">
+                    <button class="btn btn-dark input-group-append" type="submit">Search</button>
+                </div>
+            </form>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top pt-0 pb-0">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/products">All products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/BOOSTER_COOKIE">Cookie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/SUMMONING_EYE">Eyes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/ENCHANTED_DIAMOND">Diamond</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/ENCHANTED_GOLD">Gold</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/SUPER_COMPACTOR_3000">Sc3k</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/ROTTEN_FLESH">Flesh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/STRING">String</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/SUPER_EGG">Super Egg</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/BLAZE_ROD">Rod</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/ENDER_PEARL">Pearl</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/BONE">Bone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/ENCHANTED_LAPIS_LAZULI">Lapis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product/ENCHANTED_DARK_OAK_LOG">Dark Oak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  
+
+<div class="container pt-4">
+    <h1>For sale!</h1>
+    <h3>Own stonks.gg today!</h3>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6">
+                <h4>What you get:</h4>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info" style="font-size: 22px"><i class="bi bi-code-square" style="font-size: 2rem"></i> Source code of the website (Java)</li>
+                    <li class="list-group-item list-group-item-success" style="font-size: 22px"><i class="bi bi-hdd mr-1" style="font-size: 2rem"></i> All the recorded bazaar/ah data</li>
+                    <li class="list-group-item list-group-item-warning" style="font-size: 22px"><i class="bi bi-house-door" style="font-size: 2rem"></i> The cool domain name</li>
+                    <li class="list-group-item list-group-item-danger" style="font-size: 22px"><i class="i bi-person-bounding-box" style="font-size: 2rem"></i> 25k uniques + 300k impressions per month</li>
+                    <li class="list-group-item list-group-item-dark" style="font-size: 22px"><i class="bi bi-tools" style="font-size: 2rem"></i> First-time setup + maintenance help</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <p>Send offers to <b>offers@stonks.gg</b></p>
+                <p>Starting bid is $USD 1,899</p>
+                <p>The site isn't currently monetized!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <div class="text-center">
+            <span class="text-muted text-center">stonks.gg by <a href="https://minikloon.com/">Minikloon</a> | SkyBlock by <a href="https://hypixel.net/">Hypixel</a> | Minecraft by <a href="https://minecraft.net">Mojang</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139533047-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139533047-3');
+  </script>
 </body>
-</html> 
+</html>
